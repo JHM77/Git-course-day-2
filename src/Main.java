@@ -4,10 +4,17 @@ public class Main {
 
         int number = incrementNumber(50);
         System.out.println(number);
+        int decrement = decrementNumber(50);
+        System.out.println(decrement);
     }
 
     public static int incrementNumber(int number) {
 
-        return number+=1;
+        return ++number;
+    }
+
+    public static int decrementNumber(int number) {
+
+        return --number;
     }
 }
